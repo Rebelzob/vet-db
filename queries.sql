@@ -67,6 +67,13 @@ SELECT * FROM animals;
 
 COMMIT;
 
+/* Inside a transaction delete all animals. 
+Then rollback the transaction and verify that the animals are still there. */
+BEGIN TRANSACTION;
+DELETE FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
+
 /* Inside a transaction delete all animals born after 2022-01-01. 
 Then save a savepoint. Then update the weight of all animals to be negative. 
 Then rollback to the savepoint. Then update the weight of all animals to be negative. 
