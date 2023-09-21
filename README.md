@@ -28,6 +28,7 @@ After you're finished please remove all the comments and instructions!
 
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
+    - [Key Features](#key-features)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -59,6 +60,16 @@ This project is a database for a Vet Clinic. It has the following table:
   </ul>
 </details>
 
+### Key Features <a name="key-features"></a>
+
+- Create a database
+- Create a table
+- Insert data into the table
+- Query the table
+- Update the table
+- Delete data from the table
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
