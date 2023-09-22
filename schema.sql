@@ -31,3 +31,25 @@ ADD COLUMN species_id INTEGER REFERENCES species(id);
 
 ALTER TABLE animals
 ADD COLUMN owner_id INTEGER REFERENCES owners(id);
+
+CREATE TABLE vets(
+	id serial PRIMARY KEY,
+	name VARCHAR(50),
+	age SMALLINT,
+	date_of_graduation DATE
+)
+
+-- Many to many relationship between the tables species and vets:
+CREATE TABLE specializations(
+	id serial PRIMARY KEY,
+	species_id INTEGER REFERENCES species(id),
+	vet_id INTEGER REFERENCES vets(id)
+)
+
+-- Many to many relationship between the tables animals and vets:
+CREATE TABLE visits(
+	id serial PRIMARY KEY,
+	animal_id INTEGER REFERENCES animals(id),
+	vet_id INTEGER REFERENCES vets(id),
+	date_of_visit DATE
+)
