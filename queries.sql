@@ -250,3 +250,6 @@ CREATE INDEX idx_animal_id ON visits(animal_id);
 
 -- Optimize second query
 CREATE INDEX idx_vet_id ON visits(vet_id);
+
+-- Optimaize third query
+CREATE INDEX idx_email ON owners(email);
