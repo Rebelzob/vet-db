@@ -244,3 +244,9 @@ JOIN (
 ) AS most_visited_species ON most_visited_species.species_id = species.id
 JOIN specializations s ON s.species_id = species.id
 LIMIT 1;
+
+-- Help reduce time in the first query
+CREATE INDEX idx_animal_id ON visits(animal_id);
+
+-- Optimize second query
+CREATE INDEX idx_vet_id ON visits(vet_id);
