@@ -57,17 +57,23 @@ CREATE TABLE visits(
 -- Add an email column to your owners table
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
-/*Create an index on the animal_id column of the visits table
+/* Create an index on the animal_id column of the visits table
 This will help reduce the time it takes to execute queries that involve the animal_id column
 For example, if you have a query that selects all visits for a particular animal, this index will make the query faster
  */
 CREATE INDEX idx_animal_id ON visits(animal_id);
 
-/* Create an index on the vet_id column of the visits table
-This will optimize queries that involve the vet_id column
-For example, if you have a query that selects all visits for a particular vet, this index will make the query faster
+/* Create a temporary table containing all visits for a specific vet (in this case, vet_id = 2)
+ This will allow us to create an index on the vet_id column that only applies to visits for this vet
+ By limiting the scope of the index in this way, we can optimize queries that involve this specific vet without affecting other queries
  */
-CREATE INDEX idx_vet_id ON visits(vet_id);
+CREATE TEMPORARY TABLE temp_visits AS SELECT * FROM visits WHERE vet_id = 2;
+
+/* Create an index on the vet_id column of the temporary table
+ This will optimize queries that involve the vet_id column for visits by the specific vet in question
+ For example, if you have a query that selects all visits for vet_id = 2, this index will make the query faster
+*/
+CREATE INDEX temp_id_vet_id_p ON temp_visits (vet_id);
 
 /* Create an index on the email column of the owners table
  This will optimize queries that involve the email column
