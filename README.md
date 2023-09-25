@@ -1,25 +1,4 @@
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
+# 🐶 Vet-Clinic-DataBase 🐺
 
 
 <!-- TABLE OF CONTENTS -->
@@ -114,12 +93,16 @@ In the project directory, run/ Excute each query in the following order:
 
 ## 👥 Authors <a name="authors"></a>
 
-### Author:
+### Authors:
 
-👤 **Javier Aybar**
+👤 **Karim Barragan**
 
 - GitHub: [@Karim Barragan](https://github.com/Rebelzob)
 - LinkedIn: [@Karim Barragan](https://www.linkedin.com/in/karim-barragan/)
+
+👤 **Mohamed Gamaleldin**
+
+- GitHub: [@Mohamed Gamaleldin](https://github.com/mohamedgamaleldin999999)
 
 <!-- FUTURE FEATURES -->
 
