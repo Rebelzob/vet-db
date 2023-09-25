@@ -114,12 +114,16 @@ In the project directory, run/ Excute each query in the following order:
 
 ## 👥 Authors <a name="authors"></a>
 
-### Author:
+### Authors:
 
-👤 **Javier Aybar**
+👤 **Karim Barragan**
 
 - GitHub: [@Karim Barragan](https://github.com/Rebelzob)
 - LinkedIn: [@Karim Barragan](https://www.linkedin.com/in/karim-barragan/)
+
+👤 **Mohamed Gamaleldin**
+
+- GitHub: [@Mohamed Gamaleldin](https://github.com/mohamedgamaleldin999999)
 
 <!-- FUTURE FEATURES -->
 
