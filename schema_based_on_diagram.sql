@@ -24,3 +24,12 @@ CREATE TABLE medical_histories(
 	patient_id INTEGER,
 	status VARCHAR(50)
 )
+
+CREATE TABLE invoice_items (
+    id serial PRIMARY KEY,
+    unit_price DECIMAL(10, 2),
+    quantity INT,
+    total_price DECIMAL(10, 2),
+    invoice_id INT,
+    treatment_id INT
+);
