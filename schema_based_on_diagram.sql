@@ -17,3 +17,10 @@ CREATE TABLE treatments (
     name varchar(50),
     type varchar(50)
 );
+
+CREATE TABLE medical_histories(
+	id serial PRIMARY KEY,
+	admitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	patient_id INTEGER,
+	status VARCHAR(50)
+)
