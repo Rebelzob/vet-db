@@ -48,3 +48,8 @@ ALTER TABLE invoice_items
 ADD CONSTRAINT fk_invoice_invoice_items_invoice_id
 FOREIGN KEY (invoice_id)
 REFERENCES invoices (id);
+
+ALTER TABLE invoice_items
+ADD CONSTRAINT fk_tratments_tratment_id
+FOREIGN KEY (treatment_id)
+REFERENCES treatments(id);
