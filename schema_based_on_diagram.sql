@@ -38,3 +38,8 @@ ALTER TABLE invoice
 ADD CONSTRAINT fk_invoice_medical_history_id
 FOREIGN KEY (medical_history_id)
 REFERENCES medical_histories (id);
+
+ALTER TABLE medical_histories
+ADD CONSTRAINT fk_medical_history_patients_id
+FOREIGN KEY (patient_id)
+REFERENCES patients (id);
