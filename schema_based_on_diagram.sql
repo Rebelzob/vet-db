@@ -11,3 +11,9 @@ CREATE TABLE invoice(
 	played_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	medical_history_id INTEGER
 )
+
+CREATE TABLE treatments (
+    id serial PRIMARY KEY,
+    name varchar(50),
+    type varchar(50)
+);
